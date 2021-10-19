@@ -76,7 +76,8 @@ public class GameConnection extends GameApplet {
             this.showLoginScreenStatus(loginScreenStatuses[0], loginScreenStatuses[1]);
          }
       } catch (Exception var4) {
-         this.serverAddress = this.serverAddress2;
+         // Changed from original - do not switch over server address
+         // this.serverAddress = this.serverAddress2;
          System.out.println(String.valueOf(var4));
          this.showLoginScreenStatus(loginScreenStatuses[12], loginScreenStatuses[13]);
       }
@@ -123,7 +124,8 @@ public class GameConnection extends GameApplet {
             this.showLoginScreenStatus(loginScreenStatuses[12], loginScreenStatuses[13]);
          }
       } catch (Exception var8) {
-         this.serverAddress = this.serverAddress2;
+         // Changed from original - do not switch over server address
+         // this.serverAddress = this.serverAddress2;
          System.out.println(String.valueOf(var8));
          this.showLoginScreenStatus(loginScreenStatuses[12], loginScreenStatuses[13]);
       }
